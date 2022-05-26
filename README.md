@@ -1,2 +1,2 @@
 # WAKE_workshops
-Materila for the WAKE workshops
+Material for the WAKE workshops.
