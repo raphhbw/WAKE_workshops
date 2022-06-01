@@ -7,7 +7,7 @@ it -- all contributions are welcomed!
 
 Contents
 ---
-**Session 1:** From linear models to machine learning  
+**Session 1:** From linear models to deep learning  
 **Session 2:** Machine learning for modern astronomy
 
 Each session is contained within it's own folder for ease of organisation - each session contains:
