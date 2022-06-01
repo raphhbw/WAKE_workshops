@@ -27,7 +27,9 @@ Please note that the notebooks need Python 3 - all standard distributions should
 pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ```
-You will need at least 600MB of free space to install the required packages.
+You will need at least 600MB of free space to install the required packages. This can be done via 
+[Google Colab](https://research.google.com/colaboratory/) or other online-hosted Jupyter notebook instances if this is 
+an issue.
 
 To access the Jupyter notebooks, run the below in your terminal:
 ```shell
