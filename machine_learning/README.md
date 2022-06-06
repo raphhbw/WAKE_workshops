@@ -7,8 +7,16 @@ it -- all contributions are welcomed!
 
 Contents
 ---
-**Session 1:** From linear models to deep learning  
+These are listed in the intended order of study, largely set by pre-requisites.
+
+**Session 1:** From linear models to deep learning
+- The main focus of this session is the 'Linear models to ML' notebook (see `s1_linearmodelstoml_full.ipynb`).
+  The additional gradient descent and loss functions notebooks require some concepts from this, so it is encouraged to
+  familiarise yourself beforehand if self-studying this course.
+- In the notebooks, I also suggest relevant times to check out the other notebooks.
+
 **Session 2:** Machine learning for modern astronomy
+- Building research-ready ML code using modern frameworks
 
 Each session is contained within its own folder for ease of organisation - each session contains:
 - Slides 
