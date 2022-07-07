@@ -41,7 +41,7 @@ an issue.
 
 To access the Jupyter notebooks, run the below in your terminal:
 ```shell
-jupyter-lab
+jupyter lab
 ```
 This will spawn a Jupyter server on your local machine - copy the URL (looks like 
 `http://localhost:8888/lab?token=[your_token]`) into your web browser to access the notebook interface.
