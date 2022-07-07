@@ -1,6 +1,7 @@
 Machine Learning
 ===
-This folder contains all relevant resources for the Machine Learning workshops at WAKE.
+This folder contains all relevant resources for the Machine Learning workshops at WAKE. This workshop was delivered at
+WAKE from 25th to 29th July.
 
 If you think something could be improved, or spot any errors in any of the content, please submit a pull request to fix 
 it -- all contributions are welcomed!
@@ -19,7 +20,7 @@ These are listed in the intended order of study, largely set by pre-requisites.
 - Building research-ready ML code using modern frameworks
 
 Each session is contained within its own folder for ease of organisation - each session contains:
-- Slides 
+- Slides (primarily as overview/talking points)
 - Session notebooks with elements missing for you to write, tweak, and experiment with
 - A 'solution' notebook fully filled in for you to refer to
 - Additional resources for you to read more about the content of each session
@@ -30,6 +31,21 @@ All package requirements are contained in the `requirements.txt` file - to insta
 below in your terminal/shell from the `machine_learning` subfolder. 
 This command should work the same regardless of your chosen operating system.
 Please note that the notebooks need Python 3 - all standard distributions should (hopefully) contain this now.
+
+#### Recommended (Mac/Linux users)
+To simplify dependency management and avoid clashing with your system packages, we recommend you 
+use a virtual environment. In your terminal, execute the following commands to create a new virtual environment.
+
+```shell
+python3 -m venv WAKE
+source WAKE/bin/activate
+```
+now you can enter your new virtual environment with `source WAKE/bin/activate`.
+
+Note that `activate` should be replaced with the appropriate command for your shell - if you get an error please speak 
+to one of the demonstrators. To 'exit' the virtual environment, run the `deactivate` command in your terminal.
+
+Whether inside a virtual environment or not, next install the packages using
 
 ```shell
 pip install --upgrade pip setuptools wheel
