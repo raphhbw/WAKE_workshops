@@ -1,0 +1,5 @@
+THis is an SB2 system. The primary eclipse is in NGTS and the secondary is in TESS.
+t_zero =2459337.6349254055 
+period = 91.36264073778875 / 2
+
+There will also be some slight eccentricity to this and th efit will require a surface brightness ratio (or luminosity ratio).

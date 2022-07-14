@@ -1,0 +1,5 @@
+The orbital solution for the first planet is given in https://ui.adsabs.harvard.edu/abs/2020ApJ...898L..11G/abstract 
+There is also an inner planet found in the latest TESS sector, this one has parameters
+t_zero : 2459130.15008
+period : 12.7645811
+David Anderson is writing this one up. 

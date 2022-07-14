@@ -1,0 +1,6 @@
+1.4 Rjup candidate around a F-type just below the kraft break (6300 K). On 2022-05-31 we observed aliases P12,24,36 (action 314462) where we detected an ingress event. On 2022-07-01 , we observed P24 (action 316106) which I almost overlooked had it not been for my software catching that it is entirely in transit. We see a clear offset and so we can confirm the orbital period of 30.83 days. Recovered with NGTS AC.
+
+t_zero : 2459300.0222535264
+period : 30.83629248236927
+
+There aere no RVs for this system.

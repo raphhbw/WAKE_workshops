@@ -1,0 +1,3 @@
+This is a duo candidate.
+t_zero : 2459043.601973421
+period : 27.249317098941123

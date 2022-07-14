@@ -1,0 +1,5 @@
+THis is a multiplanet system with no RVS. It looks like an inner planet with an orbital period of 0.71 days and an outer planet with parameters
+t_zero : 2459070.3651067037
+period : 25.35393393136047
+
+This might need some GP or better detrending, I'll leave that to you. 
