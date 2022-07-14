@@ -9,7 +9,7 @@ Even if you do not research exoplanets, this workshop will be useful to you, esp
 - Importance of data visualisation (H. Osborn)
 - An introduction and demonstration of the tools we can use to analyse exoplanets
     - Lightkurve and DACE (H. Osborn)
-    - Exofast and ExoFop (F. Hawthorn)
+    - EXOFAST and ExoFOP (F. Hawthorn)
     - An overview of the notebooks available to you (P. Strøm)
 - An introduction to the data we will be analysing, what we aim to achieve and how we are to divide the work (P. Strøm)
 - Analysis of the data and creation of plots (all)
