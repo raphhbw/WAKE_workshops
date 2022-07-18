@@ -9,3 +9,5 @@ tensorflow
 jupyter
 jupyterlab
 tqdm
+
+lightkurve
