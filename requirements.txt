@@ -1,0 +1,11 @@
+numpy
+scipy
+astropy
+pandas
+matplotlib
+jax
+jaxlib
+tensorflow
+jupyter
+jupyterlab
+tqdm
