@@ -9,5 +9,6 @@ tensorflow
 jupyter
 jupyterlab
 tqdm
-
+seaborn
+bokeh
 lightkurve
