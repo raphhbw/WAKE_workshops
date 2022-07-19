@@ -14,3 +14,4 @@ bokeh
 lightkurve
 certifi
 urllib
+batman-package
