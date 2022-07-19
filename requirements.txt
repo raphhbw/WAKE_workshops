@@ -12,3 +12,5 @@ tqdm
 seaborn
 bokeh
 lightkurve
+certifi
+urllib
