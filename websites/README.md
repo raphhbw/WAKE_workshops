@@ -22,6 +22,12 @@ followed by
 irm get.scoop.sh | iex
 ```
 
+Next install zola
+
+```sh
+scoop install zola
+```
+
 Once that has run test that it installed ok by typing in the powershell:
 
 ```sh
