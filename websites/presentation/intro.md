@@ -1,41 +1,62 @@
 # Website workshop
 
-Presented by Dr. Paul Strøm
+```
+
+
+                  🌐 www.yourwebsite.com
+     ¯\_( ͡° ͜ʖ ͡°)_/¯ 
+
+
+
+
+░░░░░░░░░░░░░░░░░░░░░░░░░ Presented by Dr. Paul Strøm
+```
 
 ---
 ## The advantage of having a website
 
-- You allow people to find you easier
-  - This is important, especially if you want to be invited to give a talk or join a radio show, invited by a school to do outreach...
+- People can find you online easier
+  - Relevant for potential employers, collaborators, people wanting to invite you to give talks, media / outreach
   - Ads legitimacy that you are an astronomer
+  - Makes you look more professional (and shows that you have website skills)
+
+---
+## The advantage of having a website
 
 Once people have found your website
+- You control what people find out about you
+- You can showcase what you want to show (show your best work)
+- You show them your expertise
 
-- You control what people find about you
-  - You can show that you know what you are talking about
-  - You can showcase what you want to show
+---
+
+```
+~~~graph-easy --as=boxart
+        [ In astronomy your website is your business card ]
+~~~
+```
 
 
 ---
 
 ## Ways of making a website
 
-There are may ways of making a website
+There are many ways of making a website such as:
 
-- Code it from scratch using HTML, CSS, PHP, JavaScript etc...
-- Use a template which you edit directly
-- Use a static site generator
-- Use a content management system such as Wordpress, Joomla, Drupal.
+- Code it ```from scratch``` using HTML, CSS, PHP, JavaScript etc...
+- Edit a ```pre-made template``` (HTML5 Up!)
+- Use a ```static site generator``` (Jekyll, Hugo, Zola, Gatsby)
+- Use a ```content management system``` (Wordpress, Joomla, Drupal).
 
 ---
 
-## Coding from scratch or using a template
+## Creating a website from scratch or editing a template
 
-Doing this can be very time consuming.
+Doing this can be very time consuming and requires familiarity with a lot languages such as HTML, CSS (PHP, JavaScript etc.).
 
-- It is not flexible.
+- It is not flexible. Limited features.
 - Can require a lot of work to maintain the website
-- You need to know HTML, CSS (and perhaps even PHP, Javascript etc.)
+- You are "stuck with the look"
 
 ---
 
@@ -43,9 +64,10 @@ Doing this can be very time consuming.
 
 Although this can be user-friendly it is also
 
-- Cumbersome to install yourself (you need to create a connect a database)
-- Is more prone to attack, such as spam comments
+- Cumbersome to install yourself (you need to create and connect a database)
 - Not easy to move or deploy on another server
+- It can be overkill for what we need
+- Needs maintenance
 
 ---
 
@@ -56,7 +78,19 @@ This is no perfect solution (no user-friendly interface, limited templates, stee
 - Fast and easily portable
 - Flexible and highly customisable
 - Easy to deploy and run locally
+- Once set up, easy to maintain
 
+---
+
+## Zola
+
+For this project we will use Zola.
+
+Zola is a static site generator (SSG) which uses as input Markdown. It then converts your markdown files into html webpages.
+
+- No dependencies
+- Really fast
+- Excellent documentation
 
 ---
 
@@ -70,28 +104,8 @@ This is no perfect solution (no user-friendly interface, limited templates, stee
 
 ---
 
-## Using the terminal
+## The plan for this session
 
-You do not need to use the Command Line Interface (CLI) if you prefer to use your mouse and move things around in folders visually.
-
-You are free to use what text editor you like. Something simple like **nano** will work great, alternatively **notepad/notepad++** for Windows or **sublime text** for MacOS. Personally I prefer **vim** (neovim actually).
-
-```sh
-cd - change directory
-mkdir - make a directory
-ls - list a directory
-```
-
----
-## Zola
-
-For this project we will use Zola.
-
-Zola is a static site generator (SSG) which uses as input content written in CommonMark, a strongly defined, highly compatible specification of Markdown.
-
----
-
-## The plan
 ```
 ┌─────────────────────────────┐
 │   Add content to .md files  │
@@ -109,6 +123,25 @@ Zola is a static site generator (SSG) which uses as input content written in Com
 
 ---
 
+## Using the terminal
+
+You can use the Command Line Interface (CLI) or just and move things around in folders visually.
+
+Use what text editor you like. Something simple like ```nano``` will work great, alternatively ```notepad/notepad++``` for Windows or ```sublime text``` for MacOS. Personally I prefer ```vim``` (neovim actually).
+
+---
+
+## Using the terminal
+
+```sh
+cd - change directory
+mkdir - make a directory
+ls - list a directory
+touch example.txt - will create a blank file called example.txt 
+```
+
+---
+
 ## Let's go!
 
 Create a directory where you want to store your website.
@@ -118,10 +151,8 @@ mkdir website
 cd website
 zola init
 ```
-- The URL of your website will be: https://username.github.io  
-- Sass compilation? --> Yes  
-- syntax highlighting? --> Yes  
-- Search index? --> Yes
+
+You will be asked a few questions. For now just ```hit enter```. We will be changing this later anyways.
 
 ---
 
@@ -135,9 +166,9 @@ ls
 config.toml <-- The configuration / settings file  
 content <-- where the website content goes 
 public <-- where the "compiled" website goes when ready
-sass <-- Your css files [you won't use this]
+sass <-- Your css files [ignore]
 static <-- Any files which will not change such as images
-templates <-- where you place code should you wish to cutomise
+templates <-- where you place your own template files [ignore]
 themes <-- where you put the website themes
 ```
 ---
@@ -148,10 +179,9 @@ $ zola serve
 ```
 This will show your website (but there won't be much content yet).
 
-Click on install themes. Then click the link to the list of themes. For our demonstration we will pick the theme DeepThought.
+Click on install themes. Then click the link to the list of themes. For our demonstration we will pick the theme ```DeepThought```.
 
 Go to the DeepThought git homepage.
-
 
 ---
 
@@ -171,27 +201,35 @@ Replace your config.toml file with that belonging to the theme.
 ```sh
 cp themes/DeepThought/config.toml .
 ```
-Open config.toml and add the following line somewhere in the beginning:
+---
 
-```toml
-theme = "DeepThought"
-```
-
-Also make sure the base_url is changed back:
+## Edit your config.toml file
+Open config.toml and make the following edits:
 
 ```toml
 base_url = "https://username.github.io"
 ```
 
+Add the following line somewhere in the beginning:
+
+```toml
+theme = "DeepThought"
+```
+
 ---
 
-## Re-run the zola
+## Re-run zola serve
 
-Once any changes have been made to the *config.toml* for them to be visible we have to re-run the zola serve command again.
+Once any changes have been made to the ```config.toml``` for them to be visible we have to re-run the zola serve command again.
 
 ```sh
-zola init
+zola serve
 ```
+
+To interrupt the currently running session you can use:
+
+Ctrl + C / ⌘ + C
+
 
 ---
 
@@ -202,7 +240,11 @@ cd content
 touch _index.md
 ```
 
-Edit _index.md in your favourite text editor and add:
+Edit ```content/_index.md``` in your favourite text editor.
+
+---
+
+```content/_index.md```
 
 ```toml
 +++
@@ -215,9 +257,18 @@ Thank you for visiting.
 
 ---
 
+## Refresh your website and look
+
+The content of ```content/_index.md``` should be visible.
+
+---
 ## Add a research page
 
 In the ```content``` folder create a folder called ```research``` and add a ```_index.md``` file with the following content:
+
+---
+
+```content/research/_index.md```
 
 ```toml
 +++
@@ -230,14 +281,44 @@ Page content here.
 
 ---
 
-## Do the same for blog posts
+## Edit the menu
 
-- Create an _index.md file in a new directory called ```content/posts```
-- Create a md file, for instance: ```wake_trip.md```
+To find this research page we have to link to it from the menu.  
+
+We do this in the ```config.toml``` file.
 
 ---
 
-```_index.md```
+```config.toml```
+
+```
+navbar_items = [
+    { code = "en", nav_items = [
+        { url = "$BASE_URL/", name = "Home" },
+        { url = "$BASE_URL/posts", name = "Posts" },
+        { url = "$BASE_URL/research", name = "Research" },
+        { url = "$BASE_URL/tags", name = "Tags" },
+        { url = "$BASE_URL/categories", name = "Categories" },
+    ] },
+]
+```
+
+---
+
+## Restart zola serve and referesh
+
+Hopefully your will see your research page upon a refresh.
+
+---
+
+## Do the same for blog posts
+
+- Create an ```_index.md``` file in a new directory called ```content/posts```
+- Then create a md file, with any name. Example: ```wake_trip.md```
+
+---
+
+```content/posts/_index.md```
 
 ```toml
 +++
@@ -249,7 +330,7 @@ sort_by = "date"
 
 ---
 
-```wake_trip.md```
+```content/posts/wake_trip.md```
 
 ```toml
 +++
@@ -262,8 +343,6 @@ tags = ["trip", "UK"]
 +++
 
 I had a great trip.
-
-![](/images/wake.jpeg)
 ```
 
 ---
@@ -278,6 +357,11 @@ and edit the file.
 
 ---
 
+## Let's refresh and look
+
+Notice how the tags and categories work.
+
+---
 ## Let us customise!
 
 Please navigate to the ```static``` folder and create a directory called ```images```. Place an image of yourself in that folder.
@@ -287,7 +371,6 @@ Next replace the avatar parameter in the ```config.toml``` file to point to this
 ```toml
 avatar = "images/you.jpg"
 ```
-
 
 ---
 ## Creating a GitHub pages repository to host the website
@@ -301,8 +384,6 @@ Go onto GitHub and create an empty repository with the name
 [ username.github.io ]
 ~~~
 ```
-
-Make the website public. Then clone the directory.
 
 ---
 
