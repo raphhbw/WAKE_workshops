@@ -17,8 +17,9 @@ Alternatively, the notebook can be ran locally, e.g.:
 git clone https://github.com/Lyalpha/MPAGS_Data_Mining
 cd MPAGS_Data_Mining
 
-# Check out the branch for the WAKE version
+# Check out the branch for the WAKE version and pull any updates
 git checkout -b wake
+git pull origin wake
 
 # Make a virtual environment for our notebook to run under
 python3 -m venv .venv
