@@ -9,3 +9,4 @@ tensorflow
 jupyter
 jupyterlab
 tqdm
+sklearn
